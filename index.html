@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <title>CodePen - 2076-5</title>
+  
+  
+  
+  
+<style>
+#myClock{
+  text-align:center;
+  margin:auto;
+  font-size:72px;
+  color:tomato;
+  border-style:dashed;
+  width: 700px;
+}
+
+#myDate{
+  text-align:center;
+  margin:auto;
+  font-size:60px;
+  color:red;
+  border-style:dashed;
+  width: 700px;
+}
+
+#myImage{
+  margin:auto;
+  width:700px;
+  height:400px;
+  background-image:url("data:image/jpeg;base64,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");
+}
+</style>
+
+  
+  
+  
+  
+
+</head>
+
+<body translate="no" >
+  <div id="myClock">0:0:00</div>
+<div id="myDate">#</div>
+<div id="myImage"></div>
+  
+  
+      <script id="rendered-js" >
+function updateTime(){
+  var d = new Date();
+  var n = d.toLocaleTimeString();
+  let element = document.getElementById("myClock");
+  element.textContent = n;
+  
+  var y = d.toLocaleDateString();
+  let date = document.getElementById("myDate");
+  date.innerHTML = y;
+}
+
+updateTime();
+setInterval(updateTime,1000);
+    </script>
+
+  
+
+</body>
+
+</html>
+ 
